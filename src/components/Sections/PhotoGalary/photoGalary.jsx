@@ -13,13 +13,13 @@ export default function PhotoGallery() {
     const gallery_images = [
         { img: img1, alt: 'Gallery Image 1' },
         { img: img2, alt: 'Gallery Image 2' },
-        { img: img3, alt: 'Gallery Image 3' },
-        { img: img4, alt: 'Gallery Image 4' },
+        { img: img3, alt: 'Gallery Image 2' },
+        { img: img4, alt: 'Gallery Image 3' },
         { img: img1, alt: 'Gallery Image 1' },
         { img: img2, alt: 'Gallery Image 2' },
-        { img: img3, alt: 'Gallery Image 3' },
-        { img: img4, alt: 'Gallery Image 4' }
-    ];
+        { img: img3, alt: 'Gallery Image 2' },
+        { img: img4, alt: 'Gallery Image 3' },
+    ]
 
     return (
         <div style={{ margin: "auto", maxWidth: "1200px" }}>

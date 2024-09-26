@@ -1,7 +1,7 @@
 import { Box, Typography } from "@mui/material";
 import { Swiper, SwiperSlide } from "swiper/react";
 import 'swiper/css';
-import img1 from '../../../assets/lesley.png';
+import img1 from '../../../assets/photo8.jpeg';
 import img2 from '../../../assets/ahmad.png';
 import img3 from '../../../assets/heena.png';
 import img4 from '../../../assets/ankur.png';
@@ -12,7 +12,7 @@ import { Autoplay, Pagination } from 'swiper/modules';
 export default function Specialists() {
     const specialist_data = [
         {
-            img: img4,
+            img: img1,
             title: 'Dr. Prabhat Gupta',
             designation: 'M.B.B.S (F.Ship), Cardiology, General Physician, Reg. Number - 56063'
         },
@@ -55,7 +55,7 @@ export default function Specialists() {
                 Our Medical Specialists
             </Typography>
             <Swiper
-                slidesPerView={2} // Mobile view as default
+                slidesPerView={3} // Mobile view as default
                 spaceBetween={20} // Adjust space between slides
                 loop={true}
                 autoplay={{
