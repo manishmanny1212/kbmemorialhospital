@@ -11,11 +11,11 @@ export default function HeroServices() {
   // By using useMemo, you ensure that the Services array is not recreated on every render, only on first render. This can be particularly useful if the component re-renders frequently or if the computation of the services array is complex.
   const Services = useMemo(
     () => [
-      { img: doctorIcon, title: "Doctors" },
-      { img: pharmacyIcon, title: "Labs" },
+      { img: doctorIcon, title: "Doctors" ,active: true},
+      { img: pharmacyIcon, title: "Labs" ,active: true},
       { img: hospitalIcon, title: "Hospitals", active: true },
-      { img: capsuleIcon, title: "Medical Store" },
-      { img: ambulanceIcon, title: "Ambulance" },
+      { img: capsuleIcon, title: "Medical Store" ,active: true},
+      { img: ambulanceIcon, title: "Ambulance",active: true },
     ],
     []
   );

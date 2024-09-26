@@ -1,9 +1,9 @@
 import { Box, Container } from "@mui/material";
-import { Pagination } from 'swiper/modules';
+import { Autoplay, Pagination } from 'swiper/modules'; // Import Autoplay
 import { Swiper, SwiperSlide } from "swiper/react";
 import 'swiper/css';
-import offer1 from '../../../assets/offer1.png'
-import offer2 from '../../../assets/offer2.png'
+import offer1 from '../../../assets/offer1.png';
+import offer2 from '../../../assets/offer2.png';
 
 export default function Offers() {
     return (
@@ -12,19 +12,20 @@ export default function Offers() {
                 <Swiper
                     slidesPerView={1}
                     spaceBetween={30}
-                    modules={[Pagination]}
+                    modules={[Autoplay, Pagination]} // Add Autoplay module
+                    autoplay={{
+                        delay: 3000, // 3-second delay between slides
+                        disableOnInteraction: false // Keep autoplay active even after user interaction
+                    }}
                     pagination={{
                         clickable: true
                     }}
-                    breakpoints={
-                        {
-                            767: {
-                                slidesPerView: 3
-                            }
+                    breakpoints={{
+                        767: {
+                            slidesPerView: 3
                         }
-                    }
+                    }}
                 >
-
                     <SwiperSlide>
                         <Box component={'img'} src={offer1} />
                     </SwiperSlide>

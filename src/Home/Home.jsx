@@ -10,6 +10,7 @@ import Specialization from "../components/Sections/Specialization/Specialization
 import Offers from "../components/Sections/Offers/Offers";
 import NavBar from "../components/NavBar/NavBar";
 import HeroServices from "../components/IconLayout/HeroServices";
+import PhotoGallery from "../components/Sections/PhotoGalary/photoGalary";
 
 export default function Home() {
   return (
@@ -52,6 +53,7 @@ export default function Home() {
       {/* <Blogs /> */}
 
       <OurFamilies />
+      <PhotoGallery />
 
       <FAQs />
     </Box>

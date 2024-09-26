@@ -1,9 +1,7 @@
 import {
   Box,
-  Button,
   Container,
   Grid,
-  Link,
   Stack,
   Typography,
 } from "@mui/material";
@@ -19,41 +17,72 @@ export default function Footer() {
     <Box bgcolor="primary.secondary" pb={3} pt={6}>
       <Container maxWidth="xl">
         <Grid container spacing={4}>
+          {/* Logo and Social Media Icons */}
           <Grid item xs={12} md={4.5}>
-            <Stack
-              alignItems="flex-start"
-              justifyContent="space-between"
-              height={1}
-            >
-       <div style={{ backgroundColor: 'white', padding: '8px', borderRadius: '4px' }}>
-
-              <Box src={logo} height={60} alt="Medify" component="img"  /></div>
-              <Stack direction="row" spacing={1.5}>
+            <Box mb={2} bgcolor="white" borderRadius={2} padding={1} width={135}>
+              <Box component="img" src={logo} alt="Hospital Logo" height={50} />
+            </Box>
+            <Stack direction="row" spacing={1.5}>
+              <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
                 <Box component="img" src={fb} height={36} />
+              </a>
+              <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
                 <Box component="img" src={twitter} height={36} />
+              </a>
+              <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
                 <Box component="img" src={yt} height={36} />
+              </a>
+              <a href="https://www.pinterest.com" target="_blank" rel="noopener noreferrer">
                 <Box component="img" src={pinterest} height={36} />
-              </Stack>
+              </a>
             </Stack>
           </Grid>
 
+          {/* Footer Links - About Us, Gallery, etc. */}
           <Grid item xs={12} md={2.5}>
             <Stack spacing={2}>
-              <FooterLink>About Us</FooterLink>
-              {/* <FooterLink>Our Pricing</FooterLink> */}
-              <FooterLink>Our Gallery</FooterLink>
-              {/* <FooterLink>Appointment</FooterLink> */}
               <FooterLink>Privacy Policy</FooterLink>
             </Stack>
           </Grid>
 
+          {/* Footer Links - Medical Specialties */}
           <Grid item xs={12} md={2.5}>
             <Stack spacing={2}>
               <FooterLink>Orthology</FooterLink>
               <FooterLink>Neurology</FooterLink>
-              {/* <FooterLink>Dental Care</FooterLink> */}
               <FooterLink>Opthalmology</FooterLink>
               <FooterLink>Cardiology</FooterLink>
+            </Stack>
+          </Grid>
+
+          {/* Hospital Name, Address, Contact, and Google Maps Link */}
+          <Grid item xs={12} md={3.5}>
+            <Stack spacing={2}>
+              <Typography color="white" fontWeight={500} fontSize={16}>
+                Contact Information
+              </Typography>
+              <Typography color="white" fontSize={14}>
+                K B Memorial Hospital
+              </Typography>
+              <Typography color="white" fontSize={14}>
+                Baheri, Darbhanga, near SBI bank
+              </Typography>
+              <Typography color="white" fontSize={14}>
+                Phone: 06272319103
+              </Typography>
+              <Typography color="white" fontSize={14}>
+                Email: info@kbmemorialhospital.com
+              </Typography>
+              <Typography color="white" fontSize={14}>
+                <a 
+                  href="https://www.google.com/maps/place/KB+MEMORIAL+HOSPITAL/@25.9440369,86.0404781,17z/data=!3m1!4b1!4m6!3m5!1s0x39ede900399bef93:0x7bc07d634d931463!8m2!3d25.9440369!4d86.043053!16s%2Fg%2F11lnmx7w07?entry=ttu&g_ep=EgoyMDI0MDkyMy4wIKXMDSoASAFQAw%3D%3D" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  style={{ color: 'white', textDecoration: 'underline' }} // Style the link
+                >
+                  View on Google Maps
+                </a>
+              </Typography>
             </Stack>
           </Grid>
         </Grid>
@@ -65,6 +94,7 @@ export default function Footer() {
           pt={3}
           mt={5}
           borderTop="1px solid rgba(255,255,255,0.1)"
+          textAlign="center"
         >
           Copyright ©2024 K B Memorial Hospital. All Rights Reserved
         </Typography>
