@@ -7,6 +7,9 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./Home/Home";
 import { createTheme, ThemeProvider } from "@mui/material";
 import MyBookings from "./MyBookings/MyBookings";
+import MessageForm from "./components/Messageform/messageForm";
+import LoginForm from "./components/auth/login";
+import SignupForm from "./components/auth/signup";
 
 const router = createBrowserRouter([
   {
@@ -26,6 +29,14 @@ const router = createBrowserRouter([
         element: <Home />,
       },
     ],
+  },
+  {
+    path: "/login",
+    element: <LoginForm/>,
+  },
+  {
+    path: "/signup",
+    element: <SignupForm/>,
   },
 ]);
 
