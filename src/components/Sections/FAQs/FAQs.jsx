@@ -66,6 +66,7 @@ export default function FAQs() {
                             sx={{ borderRadius: 2, boxShadow: '0px 4px 12px rgba(0, 0, 0, 0.1)' }} // Added styling to the image
                         />
                     </Grid>
+                    {/* // test */}
                     <Grid item xs={12} md={6}>
                         <Box maxWidth={450}>
                             <CustomizedAccordions data={faqs} />
