@@ -6,7 +6,7 @@ export default function WhatsAppContact() {
 
     // Function to handle WhatsApp click
     const handleWhatsAppClick = () => {
-        const url = `https://wa.me/${7070304970}`;
+        const url = `https://wa.me/${8877533865}`;
         window.open(url, '_blank'); // Open the WhatsApp chat in a new tab
     };
 
