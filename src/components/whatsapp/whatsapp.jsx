@@ -18,7 +18,7 @@ export default function WhatsAppContact() {
                     color="success" 
                     sx={{ bgcolor: '#25D366', '&:hover': { bgcolor: '#1ebe5d' } }}
                 >
-                    <WhatsAppIcon sx={{ fontSize: 40, color: 'white' }} />
+                    <WhatsAppIcon sx={{ fontSize: 30, color: 'white' }} />
                 </IconButton>
             </Tooltip>
         </Box>

@@ -46,6 +46,7 @@ export default function FAQs() {
                     <Typography variant="body1" color="text.secondary">
                         If you don't find what you're looking for, feel free to contact us.
                     </Typography>
+                    <WhatsAppContact></WhatsAppContact>
                 </Box>
 
                 <Typography color='primary.main' fontWeight={600} textAlign='center'>
@@ -73,7 +74,6 @@ export default function FAQs() {
                     </Grid>
                 </Grid>
             </Container>
-            <WhatsAppContact></WhatsAppContact>
         </Box>
     );
 }
