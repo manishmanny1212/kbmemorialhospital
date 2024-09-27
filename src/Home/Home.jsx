@@ -11,6 +11,8 @@ import Offers from "../components/Sections/Offers/Offers";
 import NavBar from "../components/NavBar/NavBar";
 import HeroServices from "../components/IconLayout/HeroServices";
 import PhotoGallery from "../components/Sections/PhotoGalary/photoGalary";
+import MessageForm from "../components/Messageform/messageForm";
+import ContactCard from "../components/ContactCard/contactCard";
 
 export default function Home() {
   return (
@@ -54,6 +56,7 @@ export default function Home() {
 
       <OurFamilies />
       <PhotoGallery />
+      <MessageForm/>
 
       <FAQs />
     </Box>

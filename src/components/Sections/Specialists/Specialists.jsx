@@ -1,7 +1,7 @@
 import { Box, Typography } from "@mui/material";
 import { Swiper, SwiperSlide } from "swiper/react";
 import 'swiper/css';
-import img1 from '../../../assets/photo8.jpeg';
+import img1 from '../../../assets/prabhat.png';
 import img2 from '../../../assets/ahmad.png';
 import img3 from '../../../assets/heena.png';
 import img4 from '../../../assets/ankur.png';
@@ -22,27 +22,27 @@ export default function Specialists() {
             designation: 'Specialist in Bone and Nerve Disorders'
         },
         {
-            img: img4,
+            img: img1,
             title: 'Dr. Ikramul Huk',
             designation: 'M.B.B.S, MD, Medicine, Reg. Number - 33772'
         },
         {
-            img: img4,
+            img: img1,
             title: 'Dr. Ravindra Kr. Gupta',
             designation: 'M.B.B.S, MD, Medicine, Reg. Number - 33772'
         },
         {
-            img: img4,
+            img: img1,
             title: 'Dr. Sonu Kumari',
             designation: 'Specialist in Women and Obstetric Disorders'
         },
         {
-            img: img4,
+            img: img1,
             title: 'Dr. Jiyaul Hoda Saan',
             designation: 'Specialist in Bone and Nerve Disorders'
         },
         {
-            img: img4,
+            img: img1,
             title: 'Dr. Gunjan Beloriya',
             designation: ' Specialist in Genital, Leprosy, and Skin Disease'
         }
@@ -69,7 +69,7 @@ export default function Specialists() {
                 breakpoints={{
                     // Desktop view with 3.5 slides visible
                     767: {
-                        slidesPerView: 2.5, // Display 3 full slides and a partial 4th slide
+                        slidesPerView: 4.5, // Display 3 full slides and a partial 4th slide
                         spaceBetween: 20, // Adjust space as per your design
                     },
                 }}
