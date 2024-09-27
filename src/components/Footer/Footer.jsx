@@ -80,13 +80,18 @@ export default function Footer() {
                   Baheri, Darbhanga, near SBI bank
                 </Typography>
               </Stack>
-
               <Stack direction="row" alignItems="center" spacing={1}>
-                <PhoneIcon fontSize="small" style={{ color: 'white' }} />
-                <Typography color="white" fontSize={14}>
-                  Phone: 06272319103
-                </Typography>
-              </Stack>
+  <PhoneIcon fontSize="small" style={{ color: 'white' }} />
+  <Typography color="white" fontSize={14}>
+    <a 
+      href="tel:+916272319103" // Use tel: scheme for click-to-call
+      style={{ color: 'white', textDecoration: 'none' }} // Style the phone number link
+    >
+      Phone: 06272319103
+    </a>
+  </Typography>
+</Stack>
+
 
               <Stack direction="row" alignItems="center" spacing={1}>
                 <EmailIcon fontSize="small" style={{ color: 'white' }} />
